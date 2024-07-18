@@ -144,7 +144,7 @@ def main():
 
             
             st.write (df_copy)
-            st.write ("To download the Table of Predicted Domains and Probabilities above, hover on the top right coner of the table and click 'download csv'") 
+            st.write ("To download the Table of Predicted Domains and Probabilities above, hover on the top right corner of the table and click 'Download as CSV'") 
 
             
             
