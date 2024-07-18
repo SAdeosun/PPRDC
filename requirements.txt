@@ -1,7 +1,4 @@
 huggingface_hub
-numpy
-pandas
-Pillow
 protobuf
 streamlit
 torch
