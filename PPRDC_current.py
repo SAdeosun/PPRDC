@@ -165,4 +165,4 @@ if __name__ == "__main__":
 
 st.markdown("""<hr style="height:4px;border:none;color:#993399;background-color:#993399;" /> """, unsafe_allow_html=True)
 
-st.write ("Powered by PPRDC on huggingface.co. Please cite as: A deep neural network model for predicting research domain of pharmacy practice publications - Adeosun et al. 2024 (manuscript under review)")
+st.markdown ("**Powered by:**  https://huggingface.co/SAdeosun/Pharmacy-Practice-Research-Domain-Classifier_PPRDC_Abstract  **Please cite as:**  *A Deep Neural Network Model for Classifying Pharmacy Practice Publications into Research Domains* - Adeosun et al. 2024 (*manuscript under review*)")
