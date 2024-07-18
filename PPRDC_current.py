@@ -91,9 +91,6 @@ def main():
         st.subheader("Upload an Excel file:")
         uploaded_file = st.file_uploader("Choose an Excel file. The column containing the abstract MUST be named: 'Abstract' (without the quotation marks)", type=["xlsx"])
 
-        #submit_button = st.button('Analyze')
-        #st.write (submit_button)
-
         if uploaded_file:
             
             df = pd.read_excel(uploaded_file)
