@@ -4,3 +4,4 @@ protobuf
 streamlit
 torch
 transformers
+openpyxl
