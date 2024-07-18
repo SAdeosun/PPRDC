@@ -144,6 +144,7 @@ def main():
 
             
             st.write (df_copy)
+            st.write ("To download the Table of Predicted Domains and Probabilities above, hover on the top right coner of the table and click 'download csv'") 
 
             
             
@@ -156,7 +157,7 @@ def main():
             results_table = df_copy['predicted_domain'].value_counts()
             
             st.table (results_table)
-            
+                       
 
 
 if __name__ == "__main__":
