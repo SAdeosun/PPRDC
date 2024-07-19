@@ -24,13 +24,15 @@ def bring_in_models():
 
 
 def main():
-    #st.title("Abstract Classification App")
+    
 
     img = Image.open("n2.jpg")
     st.image (img)
     
     st.markdown("""<hr style="height:8px;border:none;color:#993399;background-color:#993399;" /> """, unsafe_allow_html=True)
-
+    st.subheader ("About PPRDC")
+    st.markdown ("This web application would accept an abstract text (or batches of abstract text in an Excel file) and will classify them into research domains including Clinical, Education, Social & Administrative, and Basic & Translational. It will also return the respective probabilities/scores for the abstract for the respective domains") 
+    st.markdown("""<hr style="height:8px;border:none;color:#993399;background-color:#993399;" /> """, unsafe_allow_html=True)
     # Radio button to choose input type
     st.subheader ("Abstract input")
     input_type = st.radio("Select how you want to input your abstracts:", ["Text", "Excel file"])
@@ -40,7 +42,7 @@ def main():
         #user_text = st.text_area("Paste the abstract text here:")
         form_submitted = False
         with st.form(key='my_form'):
-          abstract_text_submitted = st.text_input ('Paste abstract text here and press analyze below')
+          abstract_text_submitted = st.text_input ('Paste abstract text here and press the Analyze button below:')
           submit_button = st.form_submit_button(label = 'Analyze')
         if submit_button:
           form_submitted = True
@@ -89,7 +91,7 @@ def main():
         # DataFrame input
         st.markdown("""<hr style="height:4px;border:none;color:#993399;background-color:#993399;" /> """, unsafe_allow_html=True)
         st.subheader("Upload an Excel file:")
-        uploaded_file = st.file_uploader("Choose an Excel file. The column containing the abstract MUST be named: 'Abstract' (without the quotation marks)", type=["xlsx"])
+        uploaded_file = st.file_uploader("Choose an Excel file. The column containing the abstracts MUST be named: 'Abstract' (without the quotation marks)", type=["xlsx"])
 
         if uploaded_file:
             
@@ -165,4 +167,4 @@ if __name__ == "__main__":
 
 st.markdown("""<hr style="height:4px;border:none;color:#993399;background-color:#993399;" /> """, unsafe_allow_html=True)
 
-st.markdown ("**Powered by:**  https://huggingface.co/SAdeosun/Pharmacy-Practice-Research-Domain-Classifier_PPRDC_Abstract  **Please cite as:**  *A Deep Neural Network Model for Classifying Pharmacy Practice Publications into Research Domains* - Adeosun et al. 2024 (*manuscript under review*)")
+st.markdown ("**Powered by:**  https://huggingface.co/SAdeosun/Pharmacy-Practice-Research-Domain-Classifier_PPRDC_Abstract")
