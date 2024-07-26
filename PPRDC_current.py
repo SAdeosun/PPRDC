@@ -167,4 +167,4 @@ if __name__ == "__main__":
 
 st.markdown("""<hr style="height:4px;border:none;color:#993399;background-color:#993399;" /> """, unsafe_allow_html=True)
 
-st.markdown ("**Powered by:**  https://huggingface.co/SAdeosun/Pharmacy-Practice-Research-Domain-Classifier_PPRDC_Abstract")
+#st.markdown ("**Powered by:**  https://huggingface.co/SAdeosun/Pharmacy-Practice-Research-Domain-Classifier_PPRDC_Abstract")
