@@ -48,7 +48,7 @@ def main():
           form_submitted = True
         if form_submitted:
 
-        if user_text and st.button:
+        #if user_text and st.button:
             split_text = abstract_text_submitted.split('©')
             if len (split_text) > 1:
                 abstract_text_submitted = split_text[0]
