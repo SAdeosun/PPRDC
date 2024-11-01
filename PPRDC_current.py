@@ -113,7 +113,7 @@ def main():
             #abstract_column = st.text_input ("Abstract column name")
             df_copy = df.copy()
             #df_copy['Abstract_text_removed'] = df_copy['Abstract'].apply(lambda x: '©' + x.split('©')[1] if '©' in x else None)
-            #df_copy['Abstract'] = df_copy['Abstract'].str.split('©')[0]
+            df_copy['Abstract'] = df_copy['Abstract'].str.split('©')[0]
             preds = []
             probs = []
             texts = df_copy['Abstract'].values.tolist()
