@@ -168,7 +168,7 @@ def main():
             
             st.write("Summary of Domain Predictions:")
             results_table = df_copy['predicted_domain'].value_counts()
-            st.write (results_table)
+            st.table (results_table)
                         
                                   
 
