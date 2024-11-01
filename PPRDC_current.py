@@ -48,9 +48,15 @@ def main():
           form_submitted = True
         if form_submitted:
 
-        #if user_text and st.button:
-            abstract_text_submitted = abstract_text_submitted.str.split('©').str[0]
-            abstract_text_ignored = abstract_text_submitted.str.split('©').str[1]
+        if user_text and st.button:
+            split_text = abstract_text_submitted.split('©')
+            if len (split_text) > 1:
+                abstract_text_submitted = split_text[0]
+                abstract_text_ignored = '©' + split_text[1]
+            else:
+                abstract_text_submitted = split_text[0]
+                abstract_text_ignored = None
+
             st.write(f"**Abstract text analyzed**: \n {abstract_text_submitted}")
             st.markdown(f"**Abstract_text_ignored**: \n <span style='color:red;'>{abstract_text_ignored} </span>", unsafe_allow_html=True)
 
