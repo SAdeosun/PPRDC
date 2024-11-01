@@ -169,7 +169,7 @@ def main():
             st.write("Summary of Domain Predictions:")
             results_table = df_copy['predicted_domain'].value_counts().reset_index ()
             st.write (results_table)
-            #st.bar_chart (results_table)
+            st.bar_chart (results_table, x = count, y = predicted_domain, horizontal=True)
             
             #st.table (results_table)
                        
