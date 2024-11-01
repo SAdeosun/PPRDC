@@ -49,7 +49,10 @@ def main():
         if form_submitted:
 
         #if user_text and st.button:
-            st.write(f"**You entered**: \n {abstract_text_submitted}")
+            abstract_text_submitted = abstract_text_submitted.str.split('©').str[0]
+            abstract_text_ignored = abstract_text_submitted.str.split('©').str[1]
+            st.write(f"**Abstract text analyzed**: \n {abstract_text_submitted}")
+            st.markdown(f"**Abstract_text_ignored**: \n <span style='color:red;'>{abstract_text_ignored} </span>", unsafe_allow_html=True)
 
             tokenizer, model = bring_in_models()
 
