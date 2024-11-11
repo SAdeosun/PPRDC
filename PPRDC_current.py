@@ -31,7 +31,8 @@ def main():
     
     st.markdown("""<hr style="height:8px;border:none;color:#993399;background-color:#993399;" /> """, unsafe_allow_html=True)
     st.subheader ("About PPRDC")
-    st.markdown ("This web application would accept an abstract text (or batches of abstract text in an Excel file) and will classify them into research domains including Clinical, Education, Social & Administrative, and Basic & Translational. It will also return the respective probabilities/scores for the abstract for the respective domains") 
+    st.markdown ("This web application accepts an abstract text (or a batch of abstract texts in an Excel file) and will classify them into research domains including Clinical, Education, Social & Administrative, and Basic & Translational. It will also return the respective probabilities/scores for the abstract for the respective domains") 
+    st.markdown ("**Please cite as:** Adeosun S.O., Faibille A.B., Qadir A.N., Mutwol J.T., and McMannen T. (2024). A Deep Neural Network Model for Classifying Pharmacy Practice Publications into Research Domains. *Research in Social and Administrative Pharmacy*. [10.1016/j.sapharm.2024.10.009](https://doi.org/10.1016/j.sapharm.2024.10.009).", unsafe_allow_html=True)
     st.markdown("""<hr style="height:8px;border:none;color:#993399;background-color:#993399;" /> """, unsafe_allow_html=True)
     # Radio button to choose input type
     st.subheader ("Abstract input")
